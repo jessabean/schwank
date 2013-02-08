@@ -1,0 +1,16 @@
+<footer id="page-footer">
+
+    <p class="legal">
+    X &copy; <%= Date.today.year %>
+    <a href="http://www.somecompany.com">Some Company</a>
+    All Rights Reserved
+  </p>
+
+  <ol id="assistance-links"><!-- In Reverse Because Floated Right -->
+    <li><a href="mailto:halp@somecompany.com">Contact Support</a></li>
+    <%# if user_signed_in? %>
+    <li><%= link_to "Help" %></li>
+    <%# end %>
+  </ol>
+
+</footer><!-- /header#page-footer -->

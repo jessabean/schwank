@@ -1,0 +1,15 @@
+<header id="page-header" role="banner">
+  <a href="/">
+    <hgroup>
+      <h1>Schwank</span></h1>
+      <h2>By Some Company</h2>
+    </hgroup>
+  </a>
+
+    <% if content_for?(:main_navigation) %>
+      <%= yield :main_navigation %>
+    <% else %>
+      <%= nav :main %>
+    <% end %>
+
+</header><!-- /header#page-header -->

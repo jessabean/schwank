@@ -1,14 +1,73 @@
 <!DOCTYPE html>
-<html>
+<!--[if lt IE 7]> <html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
+<!--[if IE 7]>    <html class="no-js lt-ie9 lt-ie8"> <![endif]-->
+<!--[if IE 8]>    <html class="no-js lt-ie9"> <![endif]-->
+<!--[if IE 9]>    <html class="no-js ie9"> <![endif]-->
+<!--[if IE 10]>    <html class="no-js ie10"> <![endif]-->
+<!--[if gt IE 10]><!--> <html class="no-js"> <!--<![endif]-->
 <head>
+  <meta charset="utf-8">
+
+  <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+
   <title>Schwank</title>
-  <%= stylesheet_link_tag    "application", :media => "all" %>
+  <meta name="description" content="">
+
+  <meta name="viewport" content="width=device-width">
+
+  <%= stylesheet_link_tag  "application", :media => "all" %>
+
+  <% if content_for?(:stylesheets) %>
+    <style type="text/css">
+      <%= yield :stylesheets %>
+    </style>
+  <% end %>
+
   <%= javascript_include_tag "application" %>
+
+  <% if content_for?(:head) %>
+    <%= yield :head%>
+  <% end %>
+
+  <%= favicon_link_tag %>
   <%= csrf_meta_tags %>
 </head>
-<body>
 
-<%= yield %>
+<body class="<%= controller_name %> <%= action_name %> <%#= "authenticated" if current_user %> <%= yield :body_class %> <%= "with-sub_navigation" if content_for?(:sub_navigation) %> <%= "with-sub_navigation" if content_for?(:sub_navigation) %> <%= "with-sidebar" if content_for?(:sidebar1) || content_for?(:sidebar2) %> <%= "with-sidebar1" if content_for?(:sidebar1) %> <%= "with-sidebar2" if content_for?(:sidebar2) %> preload" data-controller="<%= controller_name %>"  data-action="<%= action_name %>" <%#= "data-authentication='authenticated'" if current_user %>>
+
+    <!--[if lt IE 7]>
+        <p class="chromeframe">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> or <a href="http://www.google.com/chromeframe/?redirect=true">activate Google Chrome Frame</a> to improve your experience.</p>
+    <![endif]-->
+
+  <%= render :partial => 'layouts/header' %>
+
+  <div id="main" role="main">
+
+    <% if content_for?(:sidebar1) %>
+      <%= yield :sidebar1 %>
+    <% end %>
+
+    <section id="content" class="<%= "with-sidebar1" if content_for?(:sidebar1) %> <%= "with-sidebar2" if content_for?(:sidebar2) %>">
+      <%= render :partial => 'shared/notifications' %>
+      <%= yield %>
+    </section>
+
+    <% if content_for?(:sidebar2) %>
+      <%= yield :sidebar2 %>
+    <% end %>
+
+  </div><!-- /div#main -->
+
+  <%= render :partial => 'layouts/footer' %>
+  <%= render :partial => 'layouts/google_analytics' %>
+
+  <% if content_for?(:javascript) %>
+    <%= yield :javascript %>
+  <% end %>
+
+  <% if content_for?(:page_append) %>
+    <%= yield :page_append %>
+  <% end %>
 
 </body>
 </html>
