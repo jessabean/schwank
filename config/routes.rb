@@ -1,5 +1,10 @@
 Schwank::Application.routes.draw do
   get "pages/home"
+
+  match 'auth/:provider/callback', to: 'sessions#create'
+  match 'auth/failure', to: redirect('/')
+  match 'signout', to: 'sessions#destroy', as: 'signout'
+
   root :to => 'pages#home'
 
   # The priority is based upon order of creation:

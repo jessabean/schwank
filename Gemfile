@@ -6,7 +6,6 @@ gem 'rails', '3.2.11'
 # gem 'rails', :git => 'git://github.com/rails/rails.git'
 
 gem 'pg'
-
 gem 'json'
 
 # Gems used only for assets and not required
@@ -30,6 +29,7 @@ end
 gem 'goose', '~> 0.8.0' # for Navigation
 gem 'jquery-rails'
 gem 'bcrypt-ruby', '~> 3.0.0'
+gem 'omniauth-twitter'
 
 # To use Jbuilder templates for JSON
 # gem 'jbuilder'
