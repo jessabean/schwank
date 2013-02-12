@@ -30,6 +30,7 @@ gem 'goose', '~> 0.8.0' # for Navigation
 gem 'jquery-rails'
 gem 'bcrypt-ruby', '~> 3.0.0'
 gem 'omniauth-twitter'
+gem 'tweetstream'
 
 # To use Jbuilder templates for JSON
 # gem 'jbuilder'
