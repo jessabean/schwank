@@ -1,0 +1,8 @@
+<% if @events.blank? %>
+  NO EVENTS
+<% else %>
+  <% @events.each do |event| %>
+    <p><%= event.id %></p>
+  <% end %>
+
+<% end %>
