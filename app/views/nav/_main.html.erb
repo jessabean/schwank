@@ -1,4 +1,9 @@
-<nav id="main-navigation" role="navigation">
-  <ol class="nav">
-
-</nav>
+<% if current_user %>
+  Welcome <%= current_user.name %>!
+  <nav id="main-navigation" role="navigation">
+    <ol class="nav">
+      <%= nav_to 'Events', events_path %>
+      <li><%= link_to "Sign Out", signout_path %></li>
+    </ol>
+  </nav>
+<% end %>
