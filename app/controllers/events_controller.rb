@@ -11,4 +11,13 @@ class EventsController < ApplicationController
   def new
     @event = Event.new
   end
+
+  def create
+     @event = Event.new(params[:event])
+     if @event.save
+       redirect_to @event
+     else
+       "Well shit, there was an error."
+     end
+  end
 end
