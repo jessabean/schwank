@@ -32,6 +32,7 @@ gem 'bcrypt-ruby', '~> 3.0.0'
 gem 'omniauth-twitter'
 gem 'tweetstream'
 gem 'simple_form'
+gem 'rspec'
 
 # To use Jbuilder templates for JSON
 # gem 'jbuilder'
