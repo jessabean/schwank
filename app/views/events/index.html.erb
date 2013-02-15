@@ -1,9 +1,9 @@
 <%= link_to 'Schwank Me! Create a new event.', new_event_path %>
 
 <% if @events.blank? %>
-  NO EVENTS
+  NO EVENTS! You should make one!
 <% else %>
   <% @events.each do |event| %>
-    <p><%= event.id %></p>
+    <p><%= link_to event.hashtag, event %></p>
   <% end %>
 <% end %>
