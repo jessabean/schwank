@@ -4,6 +4,6 @@
   NO EVENTS! You should make one!
 <% else %>
   <% @events.each do |event| %>
-    <p><%= link_to event.hashtag, event %></p>
+    <p><%= link_to event.title, event %></p>
   <% end %>
 <% end %>
