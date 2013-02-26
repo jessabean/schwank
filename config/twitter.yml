@@ -1,0 +1,15 @@
+development:
+  consumer_key: '0TMLXgojWF0MMqK8BiJQA'
+  consumer_secret: 'SoT0bTyHUsYVkdtnS8wkamFq8EYbIb6y3hON4lvkfEQ'
+  oauth_token: '3146-C66KZmUzAH7YJ2fjpbzRpMpA2G8HZHoHDsCiJ3fSY'
+  oauth_token_secret: '2U1KgZfuSs5WA47bh1ppvWXywhwcdIxKZhWncSQ0VGM'
+test:
+  consumer_key: '0TMLXgojWF0MMqK8BiJQA'
+  consumer_secret: 'SoT0bTyHUsYVkdtnS8wkamFq8EYbIb6y3hON4lvkfEQ'
+  oauth_token: '3146-C66KZmUzAH7YJ2fjpbzRpMpA2G8HZHoHDsCiJ3fSY'
+  oauth_token_secret: '2U1KgZfuSs5WA47bh1ppvWXywhwcdIxKZhWncSQ0VGM'
+production:
+  consumer_key: '0TMLXgojWF0MMqK8BiJQA'
+  consumer_secret: 'SoT0bTyHUsYVkdtnS8wkamFq8EYbIb6y3hON4lvkfEQ'
+  oauth_token: '3146-C66KZmUzAH7YJ2fjpbzRpMpA2G8HZHoHDsCiJ3fSY'
+  oauth_token_secret: '2U1KgZfuSs5WA47bh1ppvWXywhwcdIxKZhWncSQ0VGM'
