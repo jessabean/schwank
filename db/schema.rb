@@ -22,8 +22,8 @@ ActiveRecord::Schema.define(:version => 20130214232131) do
     t.datetime "created_at", :null => false
     t.datetime "updated_at", :null => false
     t.string   "hashtag"
-    t.date     "start_date"
-    t.date     "end_date"
+    t.datetime "start_date"
+    t.datetime "end_date"
   end
 
   create_table "users", :force => true do |t|
