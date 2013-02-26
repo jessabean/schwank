@@ -11,7 +11,7 @@
 #
 # It's strongly recommended to check this file into your version control system.
 
-ActiveRecord::Schema.define(:version => 20130214232131) do
+ActiveRecord::Schema.define(:version => 20130226184953) do
 
   create_table "attendees", :force => true do |t|
     t.datetime "created_at", :null => false
@@ -24,6 +24,7 @@ ActiveRecord::Schema.define(:version => 20130214232131) do
     t.string   "hashtag"
     t.datetime "start_date"
     t.datetime "end_date"
+    t.string   "title"
   end
 
   create_table "users", :force => true do |t|
