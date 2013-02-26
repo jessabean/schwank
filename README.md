@@ -8,9 +8,9 @@ The place for all your party tweets
 
 1. Install Postgres
 
-The easiest way to get running with PostgreSQL is to download [Postgres.app](http://postgresapp.com/)
+   The easiest way to get running with PostgreSQL is to download [Postgres.app](http://postgresapp.com/)
 
-Alternatively, you can install with Homebrew by running `brew install postgresql`
+   Alternatively, you can install with Homebrew by running `brew install postgresql`
 
 2. Add postgres user
 
