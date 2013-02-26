@@ -1,4 +1,7 @@
 <%= simple_form_for @event do |f| %>
+  <%= f.input :title %>
   <%= f.input :hashtag %>
+  <%= f.input :start_date %>
+  <%= f.input :end_date %>
   <%= f.button :submit %>
 <% end %>
