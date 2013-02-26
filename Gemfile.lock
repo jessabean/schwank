@@ -201,4 +201,5 @@ DEPENDENCIES
   simple_form
   susy
   tweetstream
+  twitter (~> 4.5.0)
   uglifier (>= 1.0.3)

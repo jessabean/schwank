@@ -33,6 +33,7 @@ gem 'omniauth-twitter'
 gem 'tweetstream'
 gem 'simple_form'
 gem 'rspec'
+gem 'twitter', '~> 4.5.0'
 
 # To use Jbuilder templates for JSON
 # gem 'jbuilder'
