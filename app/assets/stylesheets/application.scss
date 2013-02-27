@@ -1,3 +1,10 @@
+// Vendor Stuff
+@import "vendor/normalize";
+
+// Responsive Mixins
 @import "responsive";
+
+// App Styles
 @import "base";
 @import "pages";
+
