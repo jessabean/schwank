@@ -1,0 +1,41 @@
+// Primary Palette
+// ====================================
+$purple:          #93278f;
+$grape:           darken($purple, 20);
+$teal:            #7fc1c9;
+$canteloupe:      #f78e60;
+
+
+// Grays
+// ====================================
+$gray-1:          #555;
+$gray-2:          #999;
+$gray-3:          #e6e6e6;
+$gray-4:          #f6f6f6;
+
+
+// Text
+// ====================================
+$text_color:      $gray-1;
+$text_muted:      $gray-2;
+
+
+// Links
+// ====================================
+$link_color:      $teal;
+$link_hover:      $canteloupe;
+$link_active:     darken($teal, 20);
+$link_visited:    lighten($purple, 10);
+
+
+// Interactive States
+// ====================================
+$success_text:    #66a237;
+$success_bg:      #dfefd3;
+$success_border:  darken($success_bg, 20);
+$error_text:      #d1130d;
+$error_bg:        #f3c4c2;
+$error_border:    darken($error_bg, 30);
+$notice_text:     $text_color;
+$notice_bg:       #FFEED6;
+$notice_border:   darken($notice_bg, 20);
